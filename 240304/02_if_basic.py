@@ -11,14 +11,14 @@ if msg :
 else :
     print('F')
     
-print("bool(0) ->", bool(0))
-print("bool(1) ->", bool(1))
-print("bool(-1) ->", bool(-1))
+print("bool(0) ->", bool(0)) #0 = false
+print("bool(1) ->", bool(1)) # 0을 제외하면 true
+print("bool(-1) ->", bool(-1)) # 0을 제외하면 true
 
-print("bool(0.0) ->", bool(0.0))
-print("bool(0.5) ->", bool(0.5))
-print("bool(0.5) ->", bool(-0.5))
+print("bool(0.0) ->", bool(0.0)) #0 = false
+print("bool(0.5) ->", bool(0.5)) # 0을 제외하면 true
+print("bool(0.5) ->", bool(-0.5)) # 0을 제외하면 true
 
-print("bool('문자열') ->", bool('문자열'))
-print("bool(' ') ->", bool(' '))
-print("bool('') ->", bool(''))
+print("bool('문자열') ->", bool('문자열')) #비어잇지않으면 true
+print("bool(' ') ->", bool(' ')) #비어잇지않으면 true
+print("bool('') ->", bool('')) #빈문자열은 거짓
