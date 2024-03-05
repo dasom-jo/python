@@ -1,15 +1,23 @@
+#03_list_destructuring_assignment
+#구조분해할당
+#a,b=[a,b]
+# * 나머지 요소
+#_, 제외 
+
+
 h_info = ['홍길동',10]
-name,age = h_info
-print(name,age)
+name, age = h_info
+print(name,age) #홍길동 10
 
 eight_divior = [1,2,4,8]
 odd, *even = eight_divior
-print(odd, even)
+#odd에 첫번째 요소 할당 *나머지 요소 even에 리스트로 할당
+print(odd,even) #1 [2, 4, 8]
 
-yoo_info = ['유재석','tmi1',30,'tmi2','서울']
-name, _, age,_, address = yoo_info
-print(name, age, address)
+yoo_info = ['유재석', 'TMI1', 30, 'TMI2', '서울 강남구']
+name,_, age, _,address = yoo_info
+print(name, age, address) #유재석 30 서울 강남구
 
-p_info = ['박서준','잘생김','키큼','트렌디','이태원']
-name,*_,work = p_info
+park_info = ['박서준', 'TMI1', 'TMI2', 'TMI3', '이태원클라쓰']
+name, *_, work = park_infoeight_divior
 print(name,work)
