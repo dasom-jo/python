@@ -1,19 +1,8 @@
-N1 = [1]
-N2 = [2]
-N3 = [3]
-N4 = [4]
-N5 = [5]
+N, M = [int(x) for x in input().split()] #10 과 5를 받음
+balls = [i for i in range(1, N + 1)] # 1-10개의 볼을 만듬
 
-N_list = [N1,N2,N3,N4,N5]
-#print(N_list)
-i = int(input('1~5숫자입력'))
-j = int(input('1~5숫자입력'))
-
-#change_elements(N[i],N[j],i,j)
-
-#print(f'{i}번 바구니안엔 {j}번의 공이 있습니다.')
-#print(f'{j}번 바구니안엔 {i}번의 공이 있습니다.')
-
-
-#n은 바구니 값
-#m개의 줄에걸ㅌ쳐서
+for _ in range(M):
+    left, right = [int(x) - 1 for x in input().split()]
+    balls[left], balls[right] = balls[right], balls[left]
+    
+print(*balls)

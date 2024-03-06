@@ -3,17 +3,16 @@ son_dict = {
     'age' : 29,
     'address' : ['한국','영국','독일']
 }
-print(son_dict.keys())
-print(len(son_dict.keys()))
-print(son_dict.values())
-print(son_dict.items()) #키와 밸류를 각각 튜플로 묶어서 반환
 
-print(son_dict.get('name')) #= print(son_dict['name'])
+print(son_dict.keys()) #key들을 모아서 반환
+print(son_dict.values()) #value들을 모아서 반환
+print(son_dict.items()) #key와 value를 각각 튜플로 묶어서 반환
 
-#print(son_dict.get('job')) #에러남 다음거 실행못함
-print(son_dict.get('job')) #none
-print(son_dict.get('job','무직')) #업스면 기본값 출력
+print(son_dict.get('name')) 
+#get() 함수는 딕셔너리(Dictionary)에서 특정 키(key)에 해당하는 값을 반환하는 메서드입니다
+#print(son_dict['job']) 그냥쓰면 에러
+print(son_dict.get('job')) #없으면 none
+print(son_dict.get('job', '무직')) #없으면 기본값 출력
 
-for k, v in son_dict.items():
-    print(f'키 : {k},값 : {v}')
-    
+son_dict.clear()
+print(son_dict)
