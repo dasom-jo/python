@@ -12,21 +12,16 @@
 #전역변수 //함수 내부에서 print 햇으면 95
 
 #2 지역변수[global]
-score = 100 #전역변수
-
+score = 100
 def score_change():
-    global score 
+    global score
     score -= 5 
-    
 score_change()
-
 print(score)
 
 #3  반환해서 재할당
-score = 100
+score = 100 
 def score_change(score):
-    score -= 5
-    return score
-score =score_change(score)
-score_change(score)
-print(score) 
+    return score - 5
+score = score_change(score)
+print(score)

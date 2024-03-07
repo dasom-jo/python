@@ -1,25 +1,23 @@
-import sys
-new_input = sys.stdin.readline
-
-data = new_input().strip() #엔터치면 줄바꿈 ㅎ나번 더 늘어나서 
-print(data)
-
-def sayhi():
+def sayhello():
     print('안녕')
-sh = sayhi
+
+sh = sayhello
 sh()
 
-def plus(a,b):
+import sys
+new_input = sys.stdin.readline
+data=new_input().strip()
+print(data)
+
+def plus(a, b):
     return a + b
 
-def minus(a,b):
-    return a -b
+def minus(a, b) :
+    return a - b
 
 # calc_list = [plus, minus]
 # print(calc_list[0](10,20))
-# print(calc_list[0](10,20))
-
-calc_list = {'합' : plus,"차" : minus}
-print(calc_list['합'](10,20))
-print(calc_list["차"](10,20))
-
+# print(calc_list[1](10,20))
+calc_dict = {'합' : plus, '차' : minus}
+print(calc_dict['합'](20,30))
+print(calc_dict['차'](20,30))

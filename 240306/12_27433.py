@@ -1,14 +1,12 @@
 #팩토리얼
+#n*(n-1)!
+N = int(input())
 
-
-def n_multiply(num):
-    if num == 1:
+def factorial(n):
+    if n <= 1:
         return 1
-    else:
-        result = n_multiply(num - 1)
-        return num * result
+    return n * factorial(n-1)
 
-print(n_multiply(5))
-
+print(factorial(N))
 
 
