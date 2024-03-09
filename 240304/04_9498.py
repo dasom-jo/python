@@ -18,6 +18,7 @@ else : print('F')
         
 #my_string = 'hello'
 #print(my_string[0]) 첫번쨰 문자 h 출력
+#print("hello"[0]) #첫번쨰 문자 h 출력
 
 score = int(input())
 
