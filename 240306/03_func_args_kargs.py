@@ -6,15 +6,15 @@
 
 '''
 #*튜플이라는 뜻 *args:
-#     for n in names:
-# def hellos(*names): 
-#         print(f'{n}님 안녕하세요')
-        
-# hellos('조다솜','이대희')
+def hellos(*names): 
+    for n in names:
+        print(f'{n}님 안녕하세요')
+    
+hellos('조다솜','이대희')
 
 #**kwargs: 딕셔너리
-def hello_player(**players):
-    for k, v in players.items():
-        print(f'hello,{v}-{k}')
+# def hello_player(**players):
+#     for k, v in players.items(): #items은 키와 쌍값 다 가져옴
+#         print(f'hello,{v}-{k}')
         
-hello_player(손흥민 = 'FW', 이강인 = 'MF', 황희찬 = 'MF')
+# hello_player(손흥민 = 'FW', 이강인 = 'MF', 황희찬 = 'MF')

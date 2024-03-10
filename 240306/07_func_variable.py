@@ -9,6 +9,8 @@ new_input = sys.stdin.readline
 data=new_input().strip()
 print(data)
 
+print('<------------------------>')
+
 def plus(a, b):
     return a + b
 

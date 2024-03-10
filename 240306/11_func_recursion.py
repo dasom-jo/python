@@ -1,5 +1,7 @@
 #재귀함수:자기 스스로를 호출하는 함수
-
+'''자기자신을 호출한다는건 선언한 recursion_sum(num)
+        를 내부의 result = recursion_sum(num-1)에서 호출했다 
+        이를통해 재귀함수임을 알수있다'''
 def recursion_sum(num):
     if num == 1:
         return 1 
