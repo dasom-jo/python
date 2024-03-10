@@ -6,7 +6,7 @@ for _ in range(CASE_NUM):
     d_word_a = {}
     for i in word_a:
         if i in d_word_a:
-            d_word_a[i]+=1
+            d_word_a[i]+=1 #각 알파벳마다 숫자를 부여
             print(d_word_a)
         else:
             d_word_a[i] = 1

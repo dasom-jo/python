@@ -34,14 +34,16 @@ result =set(same_name)
 print(result)
 
 #
-names_dict = {} #{t:2 m:2 j:1} 
-result = set()
+user_name = input().split()
+names_dict = {} 
 
-for i in names : 
-    if i in names_dict:
-        result.add(i)
-    else
-        names_dixt(i) = 1
+result = set()  # 중복된 요소를 저장할 집합을 만듭니다.
+
+for i in user_name: 
+    if i in names_dict:  # 이미 입력된 값이라면
+        result.add(i)    # 중복된 요소로 간주하고 결과 집합에 추가합니다.
+    else:
+        names_dict[i] = 1  # 새로운 값이라면 딕셔너리에 추가합니다.
 
 print(result)
 
