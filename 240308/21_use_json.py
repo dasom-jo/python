@@ -1,4 +1,4 @@
-import json,requests  #제이슨 형태로 데이토ㅓㅓ를 주고받을떄 사용
+import json,requests  #제이슨 형태로 데이터를 주고받을떄 사용
 
 obj = {
     'name':'son',

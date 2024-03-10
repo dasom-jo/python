@@ -19,4 +19,39 @@ for i in M1: #for  O(n)
         
 
 #함수로 바꾸기
+def get_int_list():
+    int(input())
+    return[int(i) for i in input().split()]
 
+A = get_int_list()
+B = get_int_list()
+
+# B의 크기 * A의 배열 크기 (n**2)
+for i in B:
+    if i in A:
+        print(1)
+    else:
+        print(0)
+        
+#2
+def get_lnt_list():
+    int(input())
+    return [int(i) for i input().split()]
+
+A = sorted(get_int_list())
+B = get_int_list()
+
+for e in B:
+    result = 0
+    start = 0
+    end = len(A) - 1
+    while start <= end:
+        mid = (start + end)//2
+        if e > A[mid]:
+            start = mid + 1
+        elif e < A[mid]:
+            end = mid - 1
+        else:
+            result = 1
+            break
+    print(result)

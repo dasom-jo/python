@@ -13,7 +13,10 @@ def find_num(list, value):
         if value == list[i]:
             #일치하는 index응 발견하면 즉시 return
             return i
-        return -1
-    
+    return -1
+#파이썬은 들여쓰기를 잘해여한다 위에 return을 한칸 더 들여쓰기햇더니 위에 함수와 합쳐짐
+
 my_arr = [1,54,3,4,1,63,4,34]
+
 print(find_num(my_arr, 63))
+print(my_arr.index(63))

@@ -1,4 +1,5 @@
 #oop: object oriented progranmming(객체지향프로그래밍)
+#inheritance:상속
 
 class Animal:
     #생성자
@@ -21,3 +22,11 @@ class Human(Animal):
 choi = Human('조다솜',4)
 choi.info()
 choi.speak('안녕하세요')
+
+print(isinstance(choi, Human)) # True
+print(isinstance(choi, Animal))  # True
+print(isinstance(choi, object)) # True
+
+#print(isinstance(pig, Human)) # False
+#print(isinstance(pig, Animal)) # True
+#print(isinstance(pig, object)) # True

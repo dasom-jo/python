@@ -1,7 +1,7 @@
 import package.rrn.prac
 
 
-print()
+print(rrn.get_gender('9912112001122'))
 
 
 
