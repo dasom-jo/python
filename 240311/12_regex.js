@@ -1,4 +1,4 @@
-let regex = /[a-z]/;
+let regex = /[a-z]/g; //g는 전역설정
 let language = 'node'
 console.log(regex.exec(language)) //조건에 가장 부합하는 첫번쨰 결과
 console.log(regex.test(language))
