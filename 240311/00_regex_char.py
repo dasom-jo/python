@@ -1,5 +1,5 @@
 from regex_check import match_check as mc
-
+    #(regex),(str)
 mc('[abc]', 'alphabet')
 #[abc]: alphabet is ok
 mc('[a-c]', 'liberty')
@@ -25,7 +25,7 @@ mc("[a-zA-Z]", 'number')
 mc("[^a-zA-Z]", 'number')
 #[^a-zA-Z]:numberis  not  ok
 
-mc("[^a-zA-Z-9]","GILINDONG123")
+mc("[^a-zA-Z-9]","GIldong123")
 #[a-zA0-9]: GIldong123 is ok
 
 mc("\W","GILINDONG123")
