@@ -1,2 +1,2 @@
-f = open("note.txt", "w")
+f = open("note.txt","w")
 f.close()
